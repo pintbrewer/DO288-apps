@@ -4,13 +4,9 @@ pipeline {
         timeout(time: 60, unit: 'MINUTES')
     }
     agent {
-      node {
-	agent {
 	  node {
 	    label 'nodejs'
 	  }
-	}
-      }
     }
 
     environment {
